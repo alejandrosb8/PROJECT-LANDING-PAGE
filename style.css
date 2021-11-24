@@ -1,5 +1,21 @@
 *,
 *::before,
 *::after {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
+}
+:root {
+	--dark-blue: #1f2937;
+	--white-text: #e5e7eb;
+	--light-blue: #3882f6;
+	--black-text: #1f2937;
+	--quote-background: #e5e7eb;
+	--quote-text: #1f2937;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	font-family: "Roboto", sans-serif;
 }
