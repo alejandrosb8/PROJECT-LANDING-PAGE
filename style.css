@@ -51,6 +51,33 @@ header .header-logo {
 	font-size: 1.8rem;
 	color: var(--off-white);
 	font-weight: 300;
+	position: relative;
+}
+.nav-link::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	background-color: var(--light-blue);
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+}
+.nav-link:hover::after {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
 }
 .welcome-section {
 	width: 100%;
@@ -93,6 +120,15 @@ header .header-logo {
 	-ms-border-radius: 8px;
 	-o-border-radius: 8px;
 	box-shadow: 0 4px 3px hsl(215, 28%, 10%);
+	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+}
+.title-container a:hover {
+	background-color: var(--just-white);
+	color: var(--light-blue);
 }
 .img-container {
 	max-width: 50%;
@@ -123,6 +159,8 @@ header .header-logo {
 }
 
 .info-section .info-card {
+	position: relative;
+	top: 0;
 	max-width: 200px;
 	background-color: #fafafa;
 	display: flex;
@@ -133,6 +171,14 @@ header .header-logo {
 	-moz-border-radius: 4px;
 	-ms-border-radius: 4px;
 	-o-border-radius: 4px;
+	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+}
+.info-section .info-card:hover {
+	top: 15px;
 }
 .info-card img {
 	max-height: 180px;
@@ -225,4 +271,24 @@ header .header-logo {
 	-moz-border-radius: 8px;
 	-ms-border-radius: 8px;
 	-o-border-radius: 8px;
+	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+}
+.flex-right a:hover {
+	background-color: var(--just-white);
+	color: var(--light-blue);
+}
+footer {
+	background-color: var(--dark-blue);
+	padding: 40px 15vw;
+}
+footer p {
+	width: 100%;
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: 300;
+	color: var(--just-white);
 }
